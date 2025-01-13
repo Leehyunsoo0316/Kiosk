@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // Scanner 선언
         Scanner sc = new Scanner(System.in);
-
+        
+        // 반복 실행
         while (true) {
             System.out.println("[ SHAKESHACK MENU ]");
             System.out.println("1. ShackBurger   | W 6.9 | 토마토, 양상추, 쉑소스가 토핑된 치즈버거");
@@ -25,6 +27,7 @@ public class Main {
             } else if (number == 4) {
                 System.out.println("Hamburger가 선택되었습니다.");
             } else if (number == 0) {
+                // 0을 입력하면 반복문 종료
                 System.out.println("프로그램을 종료합니다.");
                 break;
             } else {
