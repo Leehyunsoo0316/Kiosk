@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Kiosk {
-    List<MenuItem> menuItems = new ArrayList<>();
+    private List<MenuItem> menuItems = new ArrayList<>();
 
     public Kiosk (List<MenuItem> menuItems) {
         this.menuItems = menuItems;
@@ -18,7 +18,7 @@ public class Kiosk {
             System.out.println("[ SHAKESHACK MENU ]");
             // 반복문을 활용해 List 안에 있는 MenuItem을 하나씩 출력
             for (int i = 0; i < menuItems.toArray().length; i++) {
-                System.out.println((i + 1) + ". " + menuItems.get(i).name + " | W " + menuItems.get(i).price + " | " + menuItems.get(i).explanation);
+                System.out.println((i + 1) + ". " + menuItems.get(i).getName() + " | W " + menuItems.get(i).getPrice() + " | " + menuItems.get(i).getExplanation());
             }
             System.out.println("0. 종료");
 
