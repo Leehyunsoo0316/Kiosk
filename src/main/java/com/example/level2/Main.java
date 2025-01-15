@@ -27,7 +27,7 @@ public class Main {
             // 반복문을 활용해 List 안에 있는 MenuItem을 하나씩 출력
             System.out.println("[ SHAKESHACK MENU ]");
             for (int i = 0; i < menuItems.toArray().length; i++) {
-                System.out.println((i + 1) + ". " + menuItems.get(i).name + " | W " + menuItems.get(i).price + " | " + menuItems.get(i).explanation);
+                System.out.println((i + 1) + ". " + menuItems.get(i).getName() + " | W " + menuItems.get(i).getPrice() + " | " + menuItems.get(i).getExplanation());
             }
             System.out.println("0. 종료");
 
