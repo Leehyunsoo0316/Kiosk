@@ -33,18 +33,18 @@ public class Main {
 
             // 숫자 입력
             System.out.print("번호를 입력하세요.: ");
-            String number = sc.next();
+            int number = sc.nextInt();
 
             // 입력된 숫자에 따른 처리
-            if ("1".equals(number)) {
+            if (number == 1) {
                 System.out.println("선택한 메뉴 : 이름 : ShackBurger, 가격 : 6.9, 설명 : 토마토, 양상추, 쉑소스가 토핑된 치즈버거");
-            } else if ("2".equals(number)) {
+            } else if (number == 2) {
                 System.out.println("선택한 메뉴 : 이름 : SmokeShack, 가격 : 8.9, 설명 : 베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거");
-            } else if ("3".equals(number)) {
+            } else if (number == 3) {
                 System.out.println("선택한 메뉴 : 이름 : Cheeseburger, 가격 : 6.9, 설명 : 포테이토 번과 비프패티, 치즈가 토핑된 치즈버거");
-            } else if ("4".equals(number)) {
+            } else if (number == 4) {
                 System.out.println("선택한 메뉴 : 이름 : Hamburger, 가격 : 5.4, 설명 : 비프패티를 기반으로 야채가 들어간 기본버거");
-            } else if ("0".equals(number)) {
+            } else if (number == 0) {
                 // 0을 입력하면 반복문 종료
                 System.out.println("프로그램을 종료합니다.");
                 break;
