@@ -51,7 +51,7 @@ public class Kiosk {
                         break;
                     } else if (choice2 > 0 && choice2 <= choiceMenu.getMenuItems().size()) {
                         MenuItem choiceMenuItem = choiceMenu.getMenuItems().get(choice2 - 1);
-                        System.out.println("선택한 메뉴: %s\n\n" + choiceMenuItem);
+                        System.out.println("선택한 메뉴: " + choiceMenuItem);
                     } else {
                         System.out.println("잘못된 값을 입력하였습니다.");
                     }
