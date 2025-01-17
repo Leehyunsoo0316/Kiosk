@@ -157,7 +157,7 @@ public class Kiosk {
                                     default:
                                         System.out.println("잘못된 값을 입력하였습니다.");
                                 }
-                                double discount = df.format(sumPrice * discountCategory.getDiscountRate());
+                                double discount = Math.round(sumPrice * discountCategory.getDiscountRate());
                                 sumPrice = sumPrice - discount;
                                 break;
                             } else {
